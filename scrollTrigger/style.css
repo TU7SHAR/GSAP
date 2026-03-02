@@ -31,9 +31,7 @@ body {
 }
 
 #page2 {
-  background-color: lightblue;
-  /* We don't use justify-content: center here because we want the text 
-       to start at its natural position before sliding */
+  background-color: black;
 }
 
 #page2 h1 {
@@ -42,9 +40,4 @@ body {
   font-weight: 600;
   white-space: nowrap; /* Keeps text in one line */
   transform: translateX(50%);
-}
-
-#page3 {
-  background-color: #222;
-  color: white;
 }
