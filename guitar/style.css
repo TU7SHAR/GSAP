@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  overflow: hidden;
+}
+
+#string-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#guitar-svg {
+  width: 100%;
+  height: 70%;
+  overflow: visible;
+  background-color: transparent;
+}
+
+.string {
+  pointer-events: none;
+}
+
+.hit-area {
+  cursor: pointer;
+  pointer-events: stroke;
+}
+
+.string-group:hover .string {
+  stroke: rgb(117, 4, 4);
+  stroke-width: 3;
+}
+
+.bordering {
+  border: 10px dotted white;
+  border-left: 0px;
+  border-right: 0px;
+}
