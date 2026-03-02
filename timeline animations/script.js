@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
   var menu = document.querySelector("#nav i");
   var cross = document.querySelector("#full i");
 
-  // Check if elements exist before adding listeners
   if (menu) {
     menu.addEventListener("click", function () {
       tl.play();
@@ -31,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (cross) {
     cross.addEventListener("click", function () {
-      tl.reverse(); // This reverses the entire timeline
+      tl.reverse();
     });
   }
 });

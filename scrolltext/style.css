@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: black;
+}
+
+#page1,
+#page2,
+#page3 {
+  min-width: 100%;
+  min-height: 100%;
+}
