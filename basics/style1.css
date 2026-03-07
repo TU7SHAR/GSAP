@@ -1,0 +1,56 @@
+/* Reset and Layout Fixes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Crucial for responsive math */
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Gill Sans", sans-serif;
+  overflow-x: hidden; /* Prevents the 'broken' horizontal scroll on mobile */
+  width: 100%;
+}
+
+/* Box Styling (Desktop Default) */
+#box1,
+#box2,
+#box3 {
+  height: 33.3vh;
+  width: 33.3vw;
+}
+
+#box1 {
+  background-color: red;
+}
+#box2 {
+  background-color: rgb(93, 0, 255);
+}
+#box3 {
+  background-color: rgb(217, 255, 0);
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* MOBILE FIX: This makes it look like the video but responsive */
+@media screen and (max-width: 768px) {
+  #box1,
+  #box2,
+  #box3 {
+    /* We use 50vw so there is ROOM for the 50vw animation move */
+    width: 50vw;
+    height: 25vh;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}

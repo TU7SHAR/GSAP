@@ -1,16 +1,16 @@
-const box = {
-  width: 400,
-  height: 400,
-};
+// const box = {
+//   width: 400,
+//   height: 400,
+// };
 
-gsap.from("h1", {
-  opacity: 0,
-  duration: 1,
-  y: 50,
-  delay: 1,
-  stagger: -0.3,
-  yoyo: true,
-});
+// gsap.to("h1", {
+//   opacity: 0,
+//   duration: 1,
+//   y: 50,
+//   delay: 0.1,
+//   stagger: -0.3,
+//   yoyo: true,
+// });
 
 // gsap.to(".box", {
 //   x: window.innerWidth - box.width,

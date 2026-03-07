@@ -48,3 +48,17 @@ h1 {
   align-items: center;
   margin: auto;
 }
+
+/* Add this at the bottom of your style.css */
+@media screen and (max-width: 768px) {
+  #box1,
+  #box2,
+  #box3 {
+    width: 100vw; /* Make boxes take up full width on mobile */
+    height: 20vh; /* Adjust height for smaller screens */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Shrink text for mobile devices */
+  }
+}
